@@ -1,6 +1,30 @@
 #11 As Organizações Hamurabi Medeiros resolveram dar um aumento de salário aos seus colaboradores 
 #e lhe contrataram para desenvolver o programa que calculará os reajustes.
 
+salary=float(input('Digite o seu salario: '))
+
+if salary <= 280:
+    adjustment=20
+
+elif salary <= 700:
+    adjustment=15
+
+elif salary <= 1500:
+    adjustment=10
+
+else:
+    adjustment=5
+
+
+
+increase= salary*adjustment/100
+
+newSalary=salary+increase
+
+print("Salário antes do reajuste: R$",salary)
+print("Percentual de aumento aplicado:",adjustment,'%')
+print("Valor do aumento: R$",increase)
+print("Novo salário após o aumento: R$",newSalary)
 
 
 
