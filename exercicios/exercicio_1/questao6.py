@@ -3,6 +3,6 @@
 
 value=float(input('digite o seu salario aqui: '))
 
-wage=(value*0.1)+value
+salary=(value*0.1)+value
 
-print('seu salario foi reajustado para:',wage)
+print('seu salario foi reajustado para:',salary)
