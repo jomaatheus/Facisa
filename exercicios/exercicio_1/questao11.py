@@ -41,12 +41,3 @@ salário atual:
 • o valor do aumento;
 • o novo salário, após o aumento
 '''
-
-'''
-Média Conceito
-Entre 9 e 10 A
-Entre 7.5 e 9 B
-Entre 6 e 7.5 C
-Entre 4 e 6 D
-Entre 0 e 4 E
-'''
