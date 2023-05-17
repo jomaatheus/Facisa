@@ -6,10 +6,10 @@ salary=float(input('Digite o seu salario: '))
 if salary <= 280:
     adjustment=20
 
-elif salary <= 700:
+elif salary > 280 and salary < 700:
     adjustment=15
 
-elif salary <= 1500:
+elif salary >=700 and salary <= 1500:
     adjustment=10
 
 else:
