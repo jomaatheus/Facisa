@@ -18,10 +18,17 @@ while opcao !=5: #cria um menu
     print()
 
     if opcao == 1:
-        ocorrencia=input('Digite sua ocorrencia: ')
-        menu.append(ocorrencia)#adiciona uma ocorrencia a lista menu
-        print()
-        print('Ocorrencia salva com sucesso!!')
+        
+        ocorrencia = input('Digite sua ocorrencia: ')
+        
+        if ocorrencia.strip():  # Verifica se a string não está vazia após remover os espaços em branco
+            menu.append(ocorrencia)
+            print()
+            print('Ocorrencia salva com sucesso!!')
+        else:
+            print()
+            print('Erro: A ocorrencia não pode estar vazia.')
+
     
     elif opcao == 2:
         if menu: #verifica se o menu ta vazio ou se há alguma ocorrencia
