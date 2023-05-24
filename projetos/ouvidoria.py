@@ -1,14 +1,15 @@
 menu=[]
 opcao=1 #numero qualquer para entrar em while
 
-while opcao != '5': #cria um menu
+while opcao != '6': #cria um menu
     print()
     print('='*40)
     print('\n Opção 1) Cadastrar ocorrências')
     print('\n Opção 2) Listar ocorrências')
     print('\n Opção 3) Apagar ocorrências')
     print('\n Opção 4) Consultar por código')
-    print('\n Opção 5) Sair')
+    print('\n Opção 5) Alterar ocorrências')
+    print('\n Opção 6) Sair')
     print()
     print('='*40)
     print()
@@ -36,7 +37,7 @@ while opcao != '5': #cria um menu
                 print('Ocorrencia Numero',i+1,':', menu[i])
             
         else:   
-            print('Não há ocorrencias.')
+            print('Não há ocorrencias para listar.')
     
     elif opcao == '3':
 
@@ -55,7 +56,7 @@ while opcao != '5': #cria um menu
             print('Ocorrencia apagada com sucesso!')
 
         else:
-            print("Não há ocorrencias.")
+            print("Não há ocorrencias para apagar.")
     
     elif opcao == '4':
 
@@ -70,17 +71,39 @@ while opcao != '5': #cria um menu
             else:
                 print('\nCódigo inválido.')
         else:
-            print('Não há ocorrências.')
+            print('Não há ocorrências para consultar.')
             
-
     elif opcao == '5':
+
+        print('Ocorrencias disponiveis: ')
+        print()
+
+        for i in range(len(menu)): # numera as ocorrencias
+                    print('Ocorrencia Numero',i+1,':', menu[i])
+                    print()
+
+        if menu: #verifica se há ou não ocorrencias
+                 
+            alterarOcorrencia=(input('Digite o Numero da ocorrencia: ')) 
+            alterarOcorrencia = menu[i]
+
+            novaOcorrencia = input('\nDigite a nova descricao da ocorrencia: ')
+            menu[i] = novaOcorrencia
+            print()
+            print('Ocorrencia alterada com sucesso!')
+
+        else:
+            print("Não há ocorrencias para alterar.")
+         
+
+    elif opcao == '6':
          print('='*50)
          print()
          print('Obrigado(a), pela preferência espero ter ajudado!!')
          print()
          print('='*50)
     
-    elif opcao != '5' : #qualquer opção diferente de 5 ta invalida.
+    elif opcao != '6' : #qualquer opção diferente de 5 ta invalida.
          print('(Opção invalida)')
          print()
          print('Selecione uma opção valida: ')
