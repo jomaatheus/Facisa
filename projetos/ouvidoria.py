@@ -1,7 +1,7 @@
 menu=[]
 opcao=1 #numero qualquer para entrar em while
 
-while opcao !=5: #cria um menu
+while opcao != '5': #cria um menu
     print()
     print('='*30)
     print('\n Opção 1) Cadastrar ocorrências')
@@ -12,12 +12,12 @@ while opcao !=5: #cria um menu
     print()
     print('='*30)
     print()
-    opcao=int(input('digite uma opção: '))
+    opcao=input('digite uma opção: ')
     print()
-    print('opção lida',opcao)
+    print('opção lida:',opcao)
     print()
 
-    if opcao == 1:
+    if opcao == '1':
         
         ocorrencia = input('Digite sua ocorrencia: ')
         
@@ -30,7 +30,7 @@ while opcao !=5: #cria um menu
             print('Erro: A ocorrencia não pode estar vazia.')
 
     
-    elif opcao == 2:
+    elif opcao == '2':
         if menu: #verifica se o menu ta vazio ou se há alguma ocorrencia
             for i in range(len(menu)): #numera as ocorrencias
                 print('Ocorrencia Numero',i+1,':', menu[i])
@@ -38,7 +38,7 @@ while opcao !=5: #cria um menu
         else:   
             print('Não há ocorrencias.')
     
-    elif opcao == 3:
+    elif opcao == '3':
 
         print('Ocorrencias disponiveis: ')
         print()
@@ -57,7 +57,7 @@ while opcao !=5: #cria um menu
         else:
             print("Não há ocorrencias.")
     
-    elif opcao == 4:
+    elif opcao == '4':
 
         if menu:  # Verifica se o menu não está vazio
             
@@ -73,11 +73,11 @@ while opcao !=5: #cria um menu
             print('Não há ocorrências.')
             
 
-    elif opcao == 5:
+    elif opcao == '5':
          print('Obrigado(a), pela preferência espero ter ajudado!!')
          print()
     
-    elif opcao != 5: #qualquer opção diferente de 5 ta invalida.
+    elif opcao != '5' : #qualquer opção diferente de 5 ta invalida.
          print('(Opção invalida)')
          print()
          print('Selecione uma opção valida: ')
