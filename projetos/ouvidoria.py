@@ -70,7 +70,7 @@ while opcao !=5: #cria um menu
          print('Obrigado(a), pela preferência espero ter ajudado!!')
          print()
     
-    elif opcao != 5:
+    elif opcao != 5: #qualquer opção diferente de 5 ta invalida.
          print('(Opção invalida)')
          print()
          print('Selecione uma opção valida: ')
