@@ -3,14 +3,14 @@ opcao=1 #numero qualquer para entrar em while
 
 while opcao != '5': #cria um menu
     print()
-    print('='*30)
+    print('='*40)
     print('\n Opção 1) Cadastrar ocorrências')
     print('\n Opção 2) Listar ocorrências')
     print('\n Opção 3) Apagar ocorrências')
     print('\n Opção 4) Consultar por código')
     print('\n Opção 5) Sair')
     print()
-    print('='*30)
+    print('='*40)
     print()
     opcao=input('digite uma opção: ')
     print()
@@ -74,8 +74,11 @@ while opcao != '5': #cria um menu
             
 
     elif opcao == '5':
+         print('='*50)
+         print()
          print('Obrigado(a), pela preferência espero ter ajudado!!')
          print()
+         print('='*50)
     
     elif opcao != '5' : #qualquer opção diferente de 5 ta invalida.
          print('(Opção invalida)')
