@@ -6,5 +6,7 @@ number2=int(input('digite o segundo numero: '))
 
 if number1 > number2:
     print(number1,'é maior que',number2)
-else:
+elif number2 > number1:
     print(number2,'é maior que', number1)
+else:
+    print(number1, "é igual a", number2)
