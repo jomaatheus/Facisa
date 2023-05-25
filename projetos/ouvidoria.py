@@ -54,6 +54,8 @@ while opcao != '6': #cria um menu
             apagarOcorrencia = int(apagarOcorrencia)
 
             if 1 <= apagarOcorrencia <= len(menu):
+                
+                reclamacaoRemovida=menu.pop(apagarOcorrencia-1)
                 print()
                 print('Ocorrencia apagada com sucesso!')
             else:
