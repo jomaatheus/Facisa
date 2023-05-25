@@ -57,7 +57,7 @@ while opcao != '6': #cria um menu
                 
                 reclamacaoRemovida=menu.pop(apagarOcorrencia-1)
                 print()
-                print('Ocorrencia apagada com sucesso!')
+                print('A ocorrencia:', reclamacaoRemovida,'(foi apagada com sucesso!)')
             else:
                  print()
                  print('Erro: Digite uma ocorrencia valida.')
