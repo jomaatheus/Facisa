@@ -50,11 +50,15 @@ while opcao != '6': #cria um menu
 
         if menu: #verifica se há ou não ocorrencias
                  
-            apagarOcorrencia=int(input('Digite o Numero da ocorrencia: ')) 
-            apagarOcorrencia = menu.pop(apagarOcorrencia-1) # se houver ocorrencia, escolher e apagar
-            print()
-            print('Ocorrencia apagada com sucesso!')
+            apagarOcorrencia=input('Digite o Numero da ocorrencia: ')
+            apagarOcorrencia = int(apagarOcorrencia)
 
+            if 1 <= apagarOcorrencia <= len(menu):
+                print()
+                print('Ocorrencia apagada com sucesso!')
+            else:
+                 print()
+                 print('Erro: Digite uma ocorrencia valida.')
         else:
             print("Não há ocorrencias para apagar.")
     
@@ -63,6 +67,7 @@ while opcao != '6': #cria um menu
         if menu:  # Verifica se o menu não está vazio
             
             codigo = int(input('Digite o código da ocorrência: '))
+
             if codigo > 0 and codigo <= len(menu): #verifica se o codigo é valido/existe de acordo com o menu
                 ocorrencia = menu[codigo - 1]
                 print('\nOcorrência encontrada:')
@@ -84,14 +89,16 @@ while opcao != '6': #cria um menu
 
         if menu: #verifica se há ou não ocorrencias
                  
-            alterarOcorrencia=(input('Digite o Numero da ocorrencia: ')) 
-            alterarOcorrencia = menu[i]
+            alterarOcorrencia=int(input('\nDigite o Numero da ocorrencia: '))
 
-            novaOcorrencia = input('\nDigite a nova descricao da ocorrencia: ')
-            menu[i] = novaOcorrencia
-            print()
-            print('Ocorrencia alterada com sucesso!')
-
+            if 0 > alterarOcorrencia <= len(menu):
+                novaOcorrencia = input('\nDigite a nova descricao da ocorrencia: ')
+                menu[alterarOcorrencia-1] = novaOcorrencia
+                print('Ocorrencia alterada com sucesso!')
+            else:
+                print()
+                print('Ocorrencia invalida!')             
+                
         else:
             print("Não há ocorrencias para alterar.")
          
