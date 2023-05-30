@@ -6,3 +6,5 @@ consequentemente a linha 7) serão executados.
 • Ao término da execução da linha 7, a linha 8 é executada.
 
 '''
+
+qq
