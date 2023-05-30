@@ -94,11 +94,12 @@ while opcao != '6': #cria um menu
 
         if menu: #verifica se há ou não ocorrencias
                  
-            alterarOcorrencia=int(input('\nDigite o Numero da ocorrencia: '))
+            alterarOcorrencia=int(input('Digite o Numero da ocorrencia: '))
 
             if 0 < alterarOcorrencia <= len(menu):
                 novaOcorrencia = input('\nDigite a nova descricao da ocorrencia: ')
                 menu[alterarOcorrencia-1] = novaOcorrencia
+                print()
                 print('Ocorrencia alterada com sucesso!')
             else:
                 print()
@@ -106,6 +107,7 @@ while opcao != '6': #cria um menu
                 
         else:
             print("Não há ocorrencias para alterar.")
+         
          
 
     elif opcao == '6':
