@@ -7,3 +7,14 @@ consequentemente a linha 7) serão executados.
 
 '''
 
+frutas=['maçã','banana','abacaxi']
+
+for fruta in frutas:
+    print(fruta)
+    print('mais uma linha dentro do for')
+    print() #pula linha
+else:
+    print('else do for')
+
+print('fim do for')
+await
