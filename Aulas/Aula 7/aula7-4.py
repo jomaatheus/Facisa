@@ -17,4 +17,3 @@ else:
     print('else do for')
 
 print('fim do for')
-await
