@@ -12,3 +12,4 @@ command='0'
 while command != '3':
     print('1) Saque 2) Extrato 3) Sair')
     command=input('digite sua opção: ')
+    #funcionamento do programa
