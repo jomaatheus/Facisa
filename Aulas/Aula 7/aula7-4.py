@@ -7,4 +7,3 @@ consequentemente a linha 7) serão executados.
 
 '''
 
-aaabb
